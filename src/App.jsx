@@ -288,9 +288,9 @@ function App() {
 
       {/* Slide 15: Act 3 Intro */}
       <div className={`slide section-divider ${current === 15 ? 'active' : ''}`}>
-        <div className="closing-slide-bg" style={{ backgroundImage: 'url(/images/three-levels.png)' }} />
-        <div className="section-number" style={{ position: 'relative', zIndex: 1 }}>ACT III</div>
-        <h1 style={{ fontSize: '3.5rem', textAlign: 'center', position: 'relative', zIndex: 1 }}>How to Get Good at AI</h1>
+        <img src="/images/three-levels.png" alt="Three levels of mastery" className="sketch-image" />
+        <div className="section-number">ACT III</div>
+        <h1 style={{ fontSize: '3.5rem', textAlign: 'center' }}>How to Get Good at AI</h1>
         <div className="three-levels">
           <div className="three-level-card">
             <div className="level-num">01</div>
@@ -463,9 +463,9 @@ function App() {
 
       {/* Slide 23: Agents - How they work */}
       <div className={`slide ${current === 23 ? 'active' : ''}`}>
-        <div className="closing-slide-bg" style={{ backgroundImage: 'url(/images/agents-loop.png)' }} />
-        <div className="level-badge" style={{ position: 'relative', zIndex: 1 }}>LEVEL 03</div>
-        <h2 style={{ position: 'relative', zIndex: 1 }}>How Agents Work</h2>
+        <img src="/images/agents-loop.png" alt="Agent loop" className="sketch-image" />
+        <div className="level-badge">LEVEL 03</div>
+        <h2>How Agents Work</h2>
         <p style={{ marginBottom: '0.5rem' }}>A loop: think, act, observe, repeat</p>
         <div className="agent-flow">
           <div className="agent-flow-step">
