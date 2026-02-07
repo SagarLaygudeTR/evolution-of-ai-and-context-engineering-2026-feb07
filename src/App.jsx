@@ -259,6 +259,7 @@ function App() {
 
       {/* Slide 13: The Window */}
       <div className={`slide ${current === 13 ? 'active' : ''}`}>
+        <img src="/images/window-open.png" alt="Open window of opportunity" className="sketch-image-wide" style={{ opacity: 0.6 }} />
         <h2>The Window Is Open</h2>
         <p style={{ fontSize: '1.6rem', lineHeight: '1.8', maxWidth: '750px' }}>
           <em>"I use ChatGPT"</em> will sound like <em>"I use Google"</em> soon.
@@ -287,8 +288,9 @@ function App() {
 
       {/* Slide 15: Act 3 Intro */}
       <div className={`slide section-divider ${current === 15 ? 'active' : ''}`}>
-        <div className="section-number">ACT III</div>
-        <h1 style={{ fontSize: '3.5rem', textAlign: 'center' }}>How to Get Good at AI</h1>
+        <div className="closing-slide-bg" style={{ backgroundImage: 'url(/images/three-levels.png)' }} />
+        <div className="section-number" style={{ position: 'relative', zIndex: 1 }}>ACT III</div>
+        <h1 style={{ fontSize: '3.5rem', textAlign: 'center', position: 'relative', zIndex: 1 }}>How to Get Good at AI</h1>
         <div className="three-levels">
           <div className="three-level-card">
             <div className="level-num">01</div>
@@ -351,6 +353,7 @@ function App() {
 
       {/* Slide 18: Prompt Engineering - Iterate */}
       <div className={`slide ${current === 18 ? 'active' : ''}`}>
+        <img src="/images/iterate.png" alt="Iteration cycle" className="sketch-image-wide" style={{ opacity: 0.5 }} />
         <div className="level-badge">LEVEL 01</div>
         <h2>Iterate, Don't One-Shot</h2>
         <ul className="detail-list">
@@ -414,6 +417,7 @@ function App() {
 
       {/* Slide 21: Context Engineering - Why it matters */}
       <div className={`slide ${current === 21 ? 'active' : ''}`}>
+        <img src="/images/skill-gap.png" alt="Skill gap illustration" className="sketch-image-wide" style={{ opacity: 0.5 }} />
         <div className="level-badge">LEVEL 02</div>
         <h2>The Real Skill Gap</h2>
         <ul className="detail-list">
@@ -459,8 +463,9 @@ function App() {
 
       {/* Slide 23: Agents - How they work */}
       <div className={`slide ${current === 23 ? 'active' : ''}`}>
-        <div className="level-badge">LEVEL 03</div>
-        <h2>How Agents Work</h2>
+        <div className="closing-slide-bg" style={{ backgroundImage: 'url(/images/agents-loop.png)' }} />
+        <div className="level-badge" style={{ position: 'relative', zIndex: 1 }}>LEVEL 03</div>
+        <h2 style={{ position: 'relative', zIndex: 1 }}>How Agents Work</h2>
         <p style={{ marginBottom: '0.5rem' }}>A loop: think, act, observe, repeat</p>
         <div className="agent-flow">
           <div className="agent-flow-step">
