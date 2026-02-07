@@ -884,3 +884,171 @@
   animation: pulse 2s infinite;
   margin-top: 0.4rem;
 }
+
+/* ====== MOBILE RESPONSIVE ====== */
+@media (max-width: 768px) {
+  /* Slide base */
+  .slide {
+    padding: 2rem 1.5rem;
+    overflow-y: auto;
+  }
+
+  /* Typography */
+  .slide h1 { font-size: 2.2rem; }
+  .slide h2 { font-size: 1.8rem; }
+  .slide h3 { font-size: 1.1rem; }
+  .slide p { font-size: 1rem; line-height: 1.5; }
+  .slide .subtitle { font-size: 1rem; }
+  .slide .year { font-size: 0.9rem; }
+  .slide .quote { font-size: 1.2rem; }
+  .slide .quote::before,
+  .slide .quote::after { font-size: 1.6rem; }
+
+  /* Title slide */
+  .title-slide h1 { font-size: 2.4rem; }
+
+  /* Images */
+  .sketch-image {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 1rem;
+  }
+
+  .sketch-image-wide {
+    width: 100%;
+    max-width: 320px;
+    height: 200px;
+    margin-bottom: 1rem;
+  }
+
+  /* Nav elements */
+  .nav-hint { display: none; }
+  .slide-counter { font-size: 0.7rem; bottom: 1rem; right: 1rem; }
+  .fullscreen-btn { bottom: 1rem; }
+
+  /* Timeline */
+  .timeline {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .timeline-item { flex-direction: row; gap: 1rem; }
+  .timeline-item::before { display: none; }
+  .timeline-title { text-align: left; font-size: 0.9rem; }
+  .timeline-item.highlight .timeline-title { font-size: 1rem; }
+  .timeline-dot { width: 12px; height: 12px; flex-shrink: 0; }
+  .timeline-item.highlight .timeline-dot { width: 14px; height: 14px; }
+
+  /* Pattern list */
+  .pattern-list { gap: 0.8rem; }
+  .pattern-list li { font-size: 1rem; gap: 0.75rem; }
+
+  /* Level grid */
+  .level-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .level-card { padding: 1rem; }
+  .level-card h4 { font-size: 0.9rem; }
+  .level-card p { font-size: 0.85rem; }
+
+  /* Prompt compare */
+  .prompt-compare {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .prompt-box { padding: 1rem; }
+  .prompt-box code { font-size: 0.8rem; }
+
+  /* Analogy */
+  .analogy-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .analogy-box { padding: 1.25rem; }
+  .analogy-box h4 { font-size: 0.95rem; }
+  .analogy-box p { font-size: 0.85rem; }
+  .analogy-arrow { transform: rotate(90deg); }
+
+  /* Agents list */
+  .agents-list li { padding: 0.75rem 1rem; font-size: 0.95rem; }
+  .agent-icon { font-size: 1.2rem; width: 30px; }
+  .agent-text span { font-size: 0.8rem; }
+
+  /* Three levels */
+  .three-levels {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .three-level-card { padding: 1.25rem 1rem; }
+  .three-level-card .level-num { font-size: 1.8rem; }
+  .three-level-card h4 { font-size: 1.1rem; }
+
+  /* Context grid */
+  .context-what-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  .context-what-card { padding: 0.75rem; }
+  .context-what-card h4 { font-size: 0.8rem; }
+  .context-what-card p { font-size: 0.75rem; }
+
+  /* Agent flow */
+  .agent-flow {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .agent-flow-step { flex: 0 0 auto; width: 45%; padding: 0.75rem; }
+  .agent-flow-step h4 { font-size: 0.8rem; }
+  .agent-flow-step p { font-size: 0.7rem; }
+  .agent-flow-arrow { font-size: 0.9rem; }
+
+  /* GPT timeline */
+  .gpt-item { gap: 0.75rem; }
+  .gpt-year { font-size: 0.75rem; min-width: 40px; }
+  .gpt-name { font-size: 0.95rem; min-width: 75px; }
+  .gpt-desc { font-size: 0.8rem; }
+
+  /* Detail list */
+  .detail-list li { font-size: 0.95rem; padding-left: 1.25rem; }
+
+  /* Closing */
+  .closing-text { font-size: 1.1rem; line-height: 1.7; }
+  .closing-text .highlight-line { font-size: 1.3rem; }
+  .closing-text .accent-line { font-size: 1.5rem; }
+
+  /* Section divider */
+  .section-divider h1 { font-size: 2.2rem !important; }
+
+  /* Level badge */
+  .level-badge { font-size: 0.75rem; padding: 0.25rem 0.75rem; }
+}
+
+/* ====== SMALL MOBILE ====== */
+@media (max-width: 480px) {
+  .slide { padding: 1.5rem 1rem; }
+  .slide h1 { font-size: 1.8rem; }
+  .slide h2 { font-size: 1.5rem; }
+  .slide p { font-size: 0.9rem; }
+  .title-slide h1 { font-size: 2rem; }
+
+  .sketch-image { width: 120px; height: 120px; }
+  .sketch-image-wide { max-width: 260px; height: 160px; }
+
+  .context-what-grid { grid-template-columns: 1fr; }
+
+  .agent-flow-step { width: 100%; }
+  .agent-flow-arrow { display: none; }
+
+  .three-level-card .level-num { font-size: 1.4rem; }
+  .section-divider h1 { font-size: 1.8rem !important; }
+}

@@ -28,6 +28,25 @@ function App() {
     return () => window.removeEventListener('keydown', handleKey)
   }, [next, prev])
 
+  // Touch swipe support for mobile
+  useEffect(() => {
+    let touchStartX = 0
+    const handleTouchStart = (e) => { touchStartX = e.touches[0].clientX }
+    const handleTouchEnd = (e) => {
+      const diff = touchStartX - e.changedTouches[0].clientX
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) next()
+        else prev()
+      }
+    }
+    window.addEventListener('touchstart', handleTouchStart)
+    window.addEventListener('touchend', handleTouchEnd)
+    return () => {
+      window.removeEventListener('touchstart', handleTouchStart)
+      window.removeEventListener('touchend', handleTouchEnd)
+    }
+  }, [next, prev])
+
   const progress = ((current + 1) / totalSlides) * 100
 
   return (
