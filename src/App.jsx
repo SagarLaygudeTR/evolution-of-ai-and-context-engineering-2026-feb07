@@ -59,7 +59,7 @@ function App() {
 
       {/* Slide 0: Title */}
       <div className={`slide title-slide ${current === 0 ? 'active' : ''}`}>
-        <img src="/images/title-hero.png" alt="Evolution of AI" className="sketch-image-wide" style={{ opacity: 0.5, marginBottom: '1.5rem' }} />
+        <img src={`${import.meta.env.BASE_URL}images/title-hero.png`} alt="Evolution of AI" className="sketch-image-wide" style={{ opacity: 0.5, marginBottom: '1.5rem' }} />
         <div className="subtitle">A Talk on</div>
         <h1>The Evolution of AI</h1>
         <div className="divider" />
@@ -68,7 +68,7 @@ function App() {
 
       {/* Slide 1: Ada Lovelace */}
       <div className={`slide era-slide ${current === 1 ? 'active' : ''}`}>
-        <img src="/images/ada-lovelace.png" alt="Ada Lovelace" className="sketch-image" />
+        <img src={`${import.meta.env.BASE_URL}images/ada-lovelace.png`} alt="Ada Lovelace" className="sketch-image" />
         <div className="year">1843</div>
         <h2>Ada Lovelace</h2>
         <p>
@@ -80,7 +80,7 @@ function App() {
 
       {/* Slide 2: Alan Turing */}
       <div className={`slide era-slide ${current === 2 ? 'active' : ''}`}>
-        <img src="/images/alan-turing.png" alt="Alan Turing" className="sketch-image" />
+        <img src={`${import.meta.env.BASE_URL}images/alan-turing.png`} alt="Alan Turing" className="sketch-image" />
         <div className="year">1950</div>
         <h2>Alan Turing</h2>
         <p className="quote">Can machines think?</p>
@@ -92,7 +92,7 @@ function App() {
 
       {/* Slide 3: Computers Grow */}
       <div className={`slide era-slide ${current === 3 ? 'active' : ''}`}>
-        <img src="/images/computers-grow.png" alt="Evolution of computers" className="sketch-image-wide" />
+        <img src={`${import.meta.env.BASE_URL}images/computers-grow.png`} alt="Evolution of computers" className="sketch-image-wide" />
         <div className="year">1950s — 1980s</div>
         <h2>Computers Grow</h2>
         <p>
@@ -104,7 +104,7 @@ function App() {
 
       {/* Slide 4: The Internet */}
       <div className={`slide era-slide ${current === 4 ? 'active' : ''}`}>
-        <img src="/images/internet.png" alt="The Internet" className="sketch-image-wide" />
+        <img src={`${import.meta.env.BASE_URL}images/internet.png`} alt="The Internet" className="sketch-image-wide" />
         <div className="year">1990s</div>
         <h2>The Internet</h2>
         <p>
@@ -116,7 +116,7 @@ function App() {
 
       {/* Slide 5: Data */}
       <div className={`slide era-slide ${current === 5 ? 'active' : ''}`}>
-        <img src="/images/data-explosion.png" alt="Data explosion" className="sketch-image-wide" />
+        <img src={`${import.meta.env.BASE_URL}images/data-explosion.png`} alt="Data explosion" className="sketch-image-wide" />
         <div className="year">2000s — 2010s</div>
         <h2>The Data Explosion</h2>
         <p>
@@ -128,7 +128,7 @@ function App() {
 
       {/* Slide 6: Deep Learning */}
       <div className={`slide era-slide ${current === 6 ? 'active' : ''}`}>
-        <img src="/images/deep-learning.png" alt="Deep Learning" className="sketch-image-wide" />
+        <img src={`${import.meta.env.BASE_URL}images/deep-learning.png`} alt="Deep Learning" className="sketch-image-wide" />
         <div className="year">2012</div>
         <h2>Deep Learning</h2>
         <p>
@@ -140,7 +140,7 @@ function App() {
 
       {/* Slide 7: Transformers */}
       <div className={`slide era-slide ${current === 7 ? 'active' : ''}`}>
-        <img src="/images/transformers.png" alt="Transformer attention" className="sketch-image-wide" />
+        <img src={`${import.meta.env.BASE_URL}images/transformers.png`} alt="Transformer attention" className="sketch-image-wide" />
         <div className="year">2017</div>
         <h2>Transformers</h2>
         <p className="quote">Attention Is All You Need</p>
@@ -153,7 +153,7 @@ function App() {
 
       {/* Slide 8: GPT Timeline */}
       <div className={`slide era-slide ${current === 8 ? 'active' : ''}`}>
-        <img src="/images/gpt-ai.png" alt="GPT and AI" className="sketch-image" />
+        <img src={`${import.meta.env.BASE_URL}images/gpt-ai.png`} alt="GPT and AI" className="sketch-image" />
         <div className="year">2018 — Now</div>
         <h2>The GPT Era</h2>
         <div className="gpt-timeline">
@@ -192,7 +192,7 @@ function App() {
 
       {/* Slide 9: The Thread / Now */}
       <div className={`slide ${current === 9 ? 'active' : ''}`}>
-        <img src="/images/one-thread.png" alt="One thread through time" className="sketch-image-wide" style={{ opacity: 0.6 }} />
+        <img src={`${import.meta.env.BASE_URL}images/one-thread.png`} alt="One thread through time" className="sketch-image-wide" style={{ opacity: 0.6 }} />
         <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>180 Years. One Thread.</h2>
         <p style={{ fontSize: '1.5rem', lineHeight: '2.2', maxWidth: '700px' }}>
           Ada imagined it. Turing formalized it.<br />
@@ -272,7 +272,7 @@ function App() {
 
       {/* Slide 13: The Window */}
       <div className={`slide ${current === 13 ? 'active' : ''}`}>
-        <img src="/images/window-open.png" alt="Open window of opportunity" className="sketch-image-wide" style={{ opacity: 0.6 }} />
+        <img src={`${import.meta.env.BASE_URL}images/window-open.png`} alt="Open window of opportunity" className="sketch-image-wide" style={{ opacity: 0.6 }} />
         <h2>The Window Is Open</h2>
         <p style={{ fontSize: '1.6rem', lineHeight: '1.8', maxWidth: '750px' }}>
           <em>"I use ChatGPT"</em> will sound like <em>"I use Google"</em> soon.
@@ -285,7 +285,7 @@ function App() {
 
       {/* Slide 14: The Reframe */}
       <div className={`slide ${current === 14 ? 'active' : ''}`}>
-        <img src="/images/human-ai.png" alt="Human and AI collaboration" className="sketch-image-wide" style={{ opacity: 0.5 }} />
+        <img src={`${import.meta.env.BASE_URL}images/human-ai.png`} alt="Human and AI collaboration" className="sketch-image-wide" style={{ opacity: 0.5 }} />
         <h2 style={{ opacity: 0.5, fontSize: '2rem', textDecoration: 'line-through', marginBottom: '1.5rem' }}>
           Will AI replace me?
         </h2>
@@ -301,7 +301,7 @@ function App() {
 
       {/* Slide 15: Act 3 Intro */}
       <div className={`slide section-divider ${current === 15 ? 'active' : ''}`}>
-        <img src="/images/three-levels.png" alt="Three levels of mastery" className="sketch-image" />
+        <img src={`${import.meta.env.BASE_URL}images/three-levels.png`} alt="Three levels of mastery" className="sketch-image" />
         <div className="section-number">ACT III</div>
         <h1 style={{ fontSize: '3.5rem', textAlign: 'center' }}>How to Get Good at AI</h1>
         <div className="three-levels">
@@ -366,7 +366,7 @@ function App() {
 
       {/* Slide 18: Prompt Engineering - Iterate */}
       <div className={`slide ${current === 18 ? 'active' : ''}`}>
-        <img src="/images/iterate.png" alt="Iteration cycle" className="sketch-image-wide" style={{ opacity: 0.5 }} />
+        <img src={`${import.meta.env.BASE_URL}images/iterate.png`} alt="Iteration cycle" className="sketch-image-wide" style={{ opacity: 0.5 }} />
         <div className="level-badge">LEVEL 01</div>
         <h2>Iterate, Don't One-Shot</h2>
         <ul className="detail-list">
@@ -430,7 +430,7 @@ function App() {
 
       {/* Slide 21: Context Engineering - Why it matters */}
       <div className={`slide ${current === 21 ? 'active' : ''}`}>
-        <img src="/images/skill-gap.png" alt="Skill gap illustration" className="sketch-image-wide" style={{ opacity: 0.5 }} />
+        <img src={`${import.meta.env.BASE_URL}images/skill-gap.png`} alt="Skill gap illustration" className="sketch-image-wide" style={{ opacity: 0.5 }} />
         <div className="level-badge">LEVEL 02</div>
         <h2>The Real Skill Gap</h2>
         <ul className="detail-list">
@@ -476,7 +476,7 @@ function App() {
 
       {/* Slide 23: Agents - How they work */}
       <div className={`slide ${current === 23 ? 'active' : ''}`}>
-        <img src="/images/agents-loop.png" alt="Agent loop" className="sketch-image" />
+        <img src={`${import.meta.env.BASE_URL}images/agents-loop.png`} alt="Agent loop" className="sketch-image" />
         <div className="level-badge">LEVEL 03</div>
         <h2>How Agents Work</h2>
         <p style={{ marginBottom: '0.5rem' }}>A loop: think, act, observe, repeat</p>
@@ -528,7 +528,7 @@ function App() {
 
       {/* Slide 25: Close */}
       <div className={`slide ${current === 25 ? 'active' : ''}`}>
-        <div className="closing-slide-bg" style={{ backgroundImage: 'url(/images/closing.png)' }} />
+        <div className="closing-slide-bg" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/closing.png)` }} />
         <div className="closing-text">
           Ada imagined machines could think.<br />
           Turing proved they could.<br />
