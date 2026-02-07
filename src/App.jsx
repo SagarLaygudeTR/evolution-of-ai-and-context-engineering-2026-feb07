@@ -41,6 +41,19 @@ function App() {
       <div className="progress-bar" style={{ width: `${progress}%` }} />
       <div className="slide-counter">{current + 1} / {totalSlides}</div>
       <div className="nav-hint">Arrow keys to navigate</div>
+      <button
+        className="fullscreen-btn"
+        onClick={(e) => {
+          e.stopPropagation()
+          if (document.fullscreenElement) {
+            document.exitFullscreen()
+          } else {
+            document.documentElement.requestFullscreen()
+          }
+        }}
+      >
+        ⛶
+      </button>
 
       {/* =================== ACT 1: EVOLUTION =================== */}
 
